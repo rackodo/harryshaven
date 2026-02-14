@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
+@theme {
+	--color-text-50: #f4f4f0;
+	--color-text-100: #eae9e1;
+	--color-text-200: #d5d3c3;
+	--color-text-300: #c0bca5;
+	--color-text-400: #aaa688;
+	--color-text-500: #95906a;
+	--color-text-600: #777355;
+	--color-text-700: #5a563f;
+	--color-text-800: #3c3a2a;
+	--color-text-900: #1e1d15;
+	--color-text-950: #0f0e0b;
+
+	--color-background-50: #fffce5;
+	--color-background-100: #fff9cc;
+	--color-background-200: #fff399;
+	--color-background-300: #ffed66;
+	--color-background-400: #ffe733;
+	--color-background-500: #ffe100;
+	--color-background-600: #ccb400;
+	--color-background-700: #998700;
+	--color-background-800: #665a00;
+	--color-background-900: #332d00;
+	--color-background-950: #1a1700;
+
+	--color-primary-50: #faf9ea;
+	--color-primary-100: #f6f2d5;
+	--color-primary-200: #ede5ab;
+	--color-primary-300: #e3d882;
+	--color-primary-400: #dacb58;
+	--color-primary-500: #d1be2e;
+	--color-primary-600: #a79825;
+	--color-primary-700: #7d721c;
+	--color-primary-800: #544c12;
+	--color-primary-900: #2a2609;
+	--color-primary-950: #151305;
+
+	--color-secondary-50: #fdfae8;
+	--color-secondary-100: #faf5d1;
+	--color-secondary-200: #f5eca3;
+	--color-secondary-300: #f0e275;
+	--color-secondary-400: #ecd846;
+	--color-secondary-500: #e7cf18;
+	--color-secondary-600: #b9a513;
+	--color-secondary-700: #8a7c0f;
+	--color-secondary-800: #5c530a;
+	--color-secondary-900: #2e2905;
+	--color-secondary-950: #171502;
+
+	--color-accent-50: #fffce6;
+	--color-accent-100: #fff9cc;
+	--color-accent-200: #fef39a;
+	--color-accent-300: #feed67;
+	--color-accent-400: #fee634;
+	--color-accent-500: #fee001;
+	--color-accent-600: #cbb301;
+	--color-accent-700: #988701;
+	--color-accent-800: #655a01;
+	--color-accent-900: #332d00;
+	--color-accent-950: #191600;
+}
+
 :root {
-	--background: #ffffff;
-	--foreground: #171717;
+	--background: var(--color-background-50);
+	--foreground: var(--color-text-950);
 }
 
 @theme inline {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+	--font-sans: var(--font-domine);
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
+		--background: var(--color-background-900);
+		--foreground: var(--color-text-50);
 	}
 }
 
 body {
 	background: var(--background);
 	color: var(--foreground);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Domine, Helvetica, serif;
 }
