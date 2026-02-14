@@ -3,10 +3,10 @@ import { Domine } from "next/font/google";
 
 import "./globals.css";
 
-const domine = Domine({
-	variable: "--font-domine",
-	subsets: ["latin"]
-})
+import BodyWithDynamicBackground from "@/components/body_dynamic_bg";
+import Topbar from "@/components/topbar";
+
+const domine = Domine({ variable: "--font-domine", subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Harry's Haven",
@@ -18,11 +18,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang="en">
-			<body
-				className={`${domine.variable} antialiased`}
-			>
+			<BodyWithDynamicBackground>
+				<Topbar />
 				{children}
-			</body>
+			</BodyWithDynamicBackground>
 		</html>
 	);
 }

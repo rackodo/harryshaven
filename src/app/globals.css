@@ -62,26 +62,6 @@
 	--color-accent-950: #191600;
 }
 
-:root {
-	--background: var(--color-background-50);
-	--foreground: var(--color-text-950);
-}
-
-@theme inline {
-	--color-background: var(--background);
-	--color-foreground: var(--foreground);
-	--font-sans: var(--font-domine);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: var(--color-background-900);
-		--foreground: var(--color-text-50);
-	}
-}
-
 body {
-	background: var(--background);
-	color: var(--foreground);
 	font-family: Domine, Helvetica, serif;
 }
