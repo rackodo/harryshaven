@@ -1,20 +1,16 @@
 "use client";
+
 import { ReactNode, useEffect, useRef, useState } from "react";
 
 /**
- * \<body> element with additional special logic to change the background colour depending on if the currently visible Segment element is inverted or not. 
- * 
+ * \<body> element with additional special logic to change the background colour depending on if the currently visible Segment element is inverted or not.
+ *
  * In hindsight, this is mostly useless, because segments style their own backgrounds depending on their inverted flag. But I was annoyed by the background behind the Safari browser's scrollbar not matching the current background colour, so I decided to throw some extra logic in.
  */
-const BodyWithDynamicBackground = ({
-	children
-}: {
-	children: ReactNode;
-}) => {
+const BodyWithDynamicBackground = ({ children }: { children: ReactNode }) => {
 	const containerRef = useRef<HTMLBodyElement>(null);
 	const [bgColor, setBgColor] = useState("no");
 
-	
 	useEffect(() => {
 		if (!containerRef.current) return;
 
@@ -54,6 +50,6 @@ const BodyWithDynamicBackground = ({
 			{children}
 		</body>
 	);
-}
+};
 
-export default BodyWithDynamicBackground
+export default BodyWithDynamicBackground;
