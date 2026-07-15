@@ -1,5 +1,51 @@
-@import url("https://fonts.googleapis.com/css?family=Domine:700|Lato:400");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "tailwindcss";
+
+@layer base {
+	body {
+		background: var(--background);
+		color: var(--text);
+		font-family: "Lato";
+		font-weight: 400;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-family: "Domine";
+		font-weight: 700;
+	}
+
+	html {
+		font-size: 100%;
+	} /* 16px */
+
+	h1 {
+		font-size: 5.652rem; /* 90.4px */
+	}
+
+	h2 {
+		font-size: 3.997rem; /* 64px */
+	}
+
+	h3 {
+		font-size: 2.827rem; /* 45.28px */
+	}
+
+	h4 {
+		font-size: 1.999rem; /* 32px */
+	}
+
+	h5 {
+		font-size: 1.414rem; /* 22.56px */
+	}
+
+	small {
+		font-size: 0.707rem; /* 11.36px */
+	}
+}
 
 /* Colour palette: https://www.realtimecolors.com/?colors=262003-fefcf6-c8a53c-98bae2-fbd53c&fonts=Domine-Lato */
 @layer utilities {
@@ -195,48 +241,4 @@
 :root {
 	--background: var(--color-background);
 	--text: var(--color-text);
-}
-
-body {
-	background: var(--background);
-	color: var(--text);
-	font-family: "Lato";
-	font-weight: 400;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-	font-family: "Domine";
-	font-weight: 700;
-}
-
-html {
-	font-size: 100%;
-} /* 16px */
-
-h1 {
-	font-size: 5.652rem; /* 90.4px */
-}
-
-h2 {
-	font-size: 3.997rem; /* 64px */
-}
-
-h3 {
-	font-size: 2.827rem; /* 45.28px */
-}
-
-h4 {
-	font-size: 1.999rem; /* 32px */
-}
-
-h5 {
-	font-size: 1.414rem; /* 22.56px */
-}
-
-small {
-	font-size: 0.707rem; /* 11.36px */
 }
