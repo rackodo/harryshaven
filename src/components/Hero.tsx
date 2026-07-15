@@ -8,12 +8,12 @@ import Wave from "react-wavify";
 
 const Hero = () => {
 	return (
-		<div className="align-center align-center flex min-h-dvh items-center justify-center">
+		<div className="align-center align-center flex max-h-full min-h-[90dvh] items-center justify-center">
 			{/* Logo up the top */}
 			<div className="bg-background-500 absolute -top-15 left-[50%] block aspect-square w-fit -translate-x-[50%] rounded-full p-15">
 				<Icon size={64} className="text-text top relative top-5 block" />
 			</div>
-			<div className="flex-column absolute bottom-0 left-0 flex h-[55dvh] w-full md:h-[50dvh]">
+			<div className="flex-column absolute bottom-0 left-0 flex h-[55vh] w-full md:h-[50vh]">
 				<Wave
 					options={{ height: 15, amplitude: 35, speed: 0.2, points: 6 }}
 					fill="currentColor"
@@ -24,7 +24,7 @@ const Hero = () => {
 			<div className="z-20 m-auto w-dvw px-5 md:px-20">
 				<ResizingHeader className="m-auto">Enter your Haven</ResizingHeader>
 			</div>
-			<div className="absolute bottom-0 left-0 flex h-[55dvh] w-full flex-col md:h-[50dvh]">
+			<div className="absolute bottom-0 left-0 flex h-[55vh] w-full flex-col md:h-[50vh]">
 				<Wave
 					fill="currentColor"
 					paused={false}
