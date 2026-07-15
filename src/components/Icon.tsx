@@ -4,7 +4,10 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
 	size?: number;
 }
 
-const Icon = ({ size, className, ...props }: IconProps) => {
+/**
+ * SVG "Harry's Haven" Logo
+ */
+const Icon = ({ size, className, ...props }: IconProps): React.JSX.Element => {
 	return (
 		<svg
 			width={size}

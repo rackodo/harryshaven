@@ -1,3 +1,6 @@
+/**
+ * Temporary element - this website isn't done yet!
+ */
 const WIPScreen = ({ precedingBG }: { precedingBG: string }) => {
 	return (
 		<div

@@ -2,6 +2,9 @@ import { UrlObject } from "url";
 
 import Link from "next/link";
 
+/**
+ * Call-to-action button! A glorified link.
+ */
 const CTAButton = ({
 	children,
 	href,
